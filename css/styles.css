@@ -3,11 +3,11 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
-  background-color: #121212;
+  background-color: #121212; /* Dark background for contrast with white text */
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  display: none; /* Hides scrollbar for a cleaner look */
 }
 
 /* Hero Section */
@@ -18,6 +18,7 @@ body::-webkit-scrollbar {
   color: #f5f5f5;
 }
 
+/* Darkens background image for better text readability */
 .background-image {
   width: 100%;
   height: 100%;
@@ -29,11 +30,11 @@ body::-webkit-scrollbar {
   filter: brightness(50%);
 }
 
-/* Adjusted Logo Position and Size */
+/* Logo position and size adjustments */
 .logo {
   width: 18%; /* Reduced size */
   position: absolute;
-  top: 10%; /* Keeps it higher */
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -50,19 +51,21 @@ body::-webkit-scrollbar {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-/* Adjusted Title and Subtitle Positions */
+/* Title position and size */
 .main-title {
   top: 55%;
   font-size: 10rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
+/* Subtitle position adjustment */
 .sub-title {
   top: 75%;
   font-size: 4rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
+/* Icon positioning and bounce animation */
 .chevron-icon {
   position: absolute;
   top: 90%;
@@ -74,21 +77,11 @@ body::-webkit-scrollbar {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-/* Bouncing Animation */
+/* Bouncing animation for the chevron icon */
 @keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translate(-50%, -50%) translateY(0);
-  }
-  40% {
-    transform: translate(-50%, -50%) translateY(-20px);
-  }
-  60% {
-    transform: translate(-50%, -50%) translateY(-10px);
-  }
+  0%, 20%, 50%, 80%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  40% { transform: translate(-50%, -50%) translateY(-20px); }
+  60% { transform: translate(-50%, -50%) translateY(-10px); }
 }
 
 /* Second Section */
@@ -122,6 +115,7 @@ body::-webkit-scrollbar {
   text-align: right;
 }
 
+/* Book Now button styling */
 .booknow-button {
   background-color: #1e90ff;
   color: #ffffff;
@@ -138,6 +132,7 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
+/* Hover effect for Book Now button */
 .booknow-button:hover {
   background-color: #0b68c2;
 }
@@ -150,6 +145,7 @@ body::-webkit-scrollbar {
   color: #f8f9fa;
 }
 
+/* Grid layout for locations */
 .destination-grid {
   display: flex;
   justify-content: center;
@@ -164,6 +160,7 @@ body::-webkit-scrollbar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Destination image styling */
 .destination img {
   width: 100%;
   height: 100%;
@@ -181,6 +178,7 @@ body::-webkit-scrollbar {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
+/* Read More button in location cards */
 .readmore-button {
   background-color: #1e90ff;
   color: white;
@@ -205,7 +203,7 @@ body::-webkit-scrollbar {
   background-color: #0b68c2;
 }
 
-/* Fourth Section */
+/* Fourth Section - Styles for text alignment and positioning */
 .fourth-section {
   position: relative;
   width: 100%;
@@ -213,6 +211,7 @@ body::-webkit-scrollbar {
   color: #f8f9fa;
 }
 
+/* Text block positioning */
 .left-text4th,
 .right-text {
   position: absolute;
@@ -233,7 +232,7 @@ body::-webkit-scrollbar {
   text-align: left;
 }
 
-/* Fifth Section */
+/* Fifth Section - Statistics section */
 .fifth-section {
   position: relative;
   width: 100%;
@@ -241,6 +240,7 @@ body::-webkit-scrollbar {
   background: url("../assets/5thpage.jpg") no-repeat center center/cover;
 }
 
+/* Flexbox for statistics dots */
 .dot-container {
   display: flex;
   justify-content: center;
@@ -277,7 +277,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 500px; /* Increased height for emphasis */
   overflow: hidden;
   background-color: #121212;
 }
@@ -289,6 +289,7 @@ body::-webkit-scrollbar {
   height: 100%;
 }
 
+/* Continuous slide animation for images */
 .slider-images {
   display: flex;
   flex-wrap: nowrap;
@@ -303,23 +304,13 @@ body::-webkit-scrollbar {
   filter: brightness(70%);
 }
 
+/* Slide animation keyframes */
 @keyframes slide {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  20% {
-    transform: translateX(-100%);
-  }
-  40% {
-    transform: translateX(-200%);
-  }
-  60% {
-    transform: translateX(-300%);
-  }
-  80% {
-    transform: translateX(-400%);
-  }
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-100%); }
+  40% { transform: translateX(-200%); }
+  60% { transform: translateX(-300%); }
+  80% { transform: translateX(-400%); }
 }
 
 /* Testimonial Section */
@@ -359,10 +350,11 @@ body::-webkit-scrollbar {
 /* Footer */
 footer {
   background-color: #121212;
-  padding: 100px 0; /* Increased padding to show more image */
+  padding: 100px 0; /* Increased padding to reveal more background image */
   color: #f8f9fa;
 }
 
+/* Footer layout styling */
 .footer-content {
   display: flex;
   justify-content: space-around;
@@ -381,11 +373,10 @@ footer {
   font-size: 1.5rem;
 }
 
+/* Input styling for contact form */
 .contact-form input,
 .contact-form textarea {
   background-color: #1e1e1e;
   color: #f8f9fa;
   border: 1px solid #333;
 }
-
-
