@@ -26,14 +26,14 @@ body::-webkit-scrollbar {
   left: 0;
   z-index: -1;
   object-fit: cover;
-  filter: brightness(50%); /* Darkens background images for better contrast */
+  filter: brightness(50%);
 }
 
-/* Adjust Pistons Logo Position */
+/* Adjusted Logo Position and Size */
 .logo {
-  width: 25%;
+  width: 18%; /* Reduced size */
   position: absolute;
-  top: 10%; /* Moved up */
+  top: 10%; /* Keeps it higher */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -50,22 +50,22 @@ body::-webkit-scrollbar {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-/* Adjust Title and Subtitle Positions */
+/* Adjusted Title and Subtitle Positions */
 .main-title {
-  top: 55%; /* Moved title lower */
+  top: 55%;
   font-size: 10rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .sub-title {
-  top: 65%; /* Moved subtitle slightly lower */
+  top: 65%;
   font-size: 4rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .chevron-icon {
   position: absolute;
-  top: 90%; /* Adjusted down */
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f8f9fa;
@@ -181,7 +181,6 @@ body::-webkit-scrollbar {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-/* Move Read More Button in Best Locations Section */
 .readmore-button {
   background-color: #1e90ff;
   color: white;
@@ -193,7 +192,7 @@ body::-webkit-scrollbar {
   position: absolute;
   bottom: 20px;
   right: 10px;
-  margin-top: 30px; /* Adjusted position */
+  margin-top: 30px;
   display: inline-block;
 }
 
@@ -360,7 +359,7 @@ body::-webkit-scrollbar {
 /* Footer */
 footer {
   background-color: #121212;
-  padding: 50px 0;
+  padding: 80px 0; /* Increased padding to show more image */
   color: #f8f9fa;
 }
 
@@ -388,4 +387,5 @@ footer {
   color: #f8f9fa;
   border: 1px solid #333;
 }
+
 
