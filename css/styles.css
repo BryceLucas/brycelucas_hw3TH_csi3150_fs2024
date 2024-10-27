@@ -36,6 +36,8 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    opacity: 0.8; /* Add transparency */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .main-title, .sub-title {
@@ -58,7 +60,7 @@ body::-webkit-scrollbar {
 
 .chevron-icon {
     position: absolute;
-    top: 70%;
+    top: 85%; /* Adjusted down */
     left: 50%;
     transform: translate(-50%, -50%);
     color: #f8f9fa;
@@ -121,6 +123,11 @@ body::-webkit-scrollbar {
     margin-top: 20px;
 }
 
+.booknow-button a {
+    color: white;
+    text-decoration: none;
+}
+
 .booknow-button:hover {
     background-color: #0b68c2;
 }
@@ -175,6 +182,11 @@ body::-webkit-scrollbar {
     position: absolute;
     bottom: 20px;
     right: 10px;
+}
+
+.readmore-button a {
+    color: white;
+    text-decoration: none;
 }
 
 .readmore-button:hover {
@@ -257,10 +269,34 @@ body::-webkit-scrollbar {
     background-color: #121212;
 }
 
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+}
+
+.slider-images {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: slide 15s infinite; /* Add an animation for the image slider */
+}
+
 .slider-images img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    flex-shrink: 0;
     filter: brightness(70%);
+}
+
+/* Add slider animation */
+@keyframes slide {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
 }
 
 /* Testimonial Section */
