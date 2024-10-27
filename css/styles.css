@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
 }
 
 .sub-title {
-  top: 65%;
+  top: 75%;
   font-size: 4rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
@@ -359,7 +359,7 @@ body::-webkit-scrollbar {
 /* Footer */
 footer {
   background-color: #121212;
-  padding: 80px 0; /* Increased padding to show more image */
+  padding: 100px 0; /* Increased padding to show more image */
   color: #f8f9fa;
 }
 
